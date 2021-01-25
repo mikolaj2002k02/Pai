@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    background-color: blue;
+}
+
+.stopka {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #45517D;
+    height: 140px;
+    color: white;
+    font-size: 150%; 
+
+}
+
+.topka {
+display: flex;
+font-size: 120%;
+    text-align: right;
+    background-color: #45517D;
+    height: 120px;
+
+}
+#clear{
+    clear: both;
+    }
+.srodek1
+{   
+    float: left;
+    text-align: left;
+    width: 40%;
+    display: flex;
+    height: 500px;
+    padding: 15px;
+    background-color: #61B2EC;
+}
+
+.srodek2
+{
+    height: 500px;
+    padding: 15px;
+    background-color: #8EC9F2;
+}
+.akapit {
+    
+    margin: 0 auto;
+    display: flex;
+    background-color: #45517D;
+}
+
+h1 {
+    color: white;
+ 
+}
+a {
+    margin: 10px;
+    font-size: 160%;
+    color: orange;
+}

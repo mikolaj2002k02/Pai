@@ -1,0 +1,60 @@
+html {
+    font-family: Helvetica;
+}
+.kontener{
+    width: 1400px;
+    background-color: red;
+    }
+.lewa {
+    float: left;
+        background-color: Navy;
+        height: 700px;
+        width: 25%;
+    color: white; 
+    }
+.stopka {
+        text-align: center;
+        background-color: SteelBlue;
+        height: 100px;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+
+
+    .topka1 {
+        display: flex;
+            text-align: center;
+            justify-content: center;
+            background-color: RoyalBlue;
+            height: 100px;
+            width: 75%;
+        
+        }
+        .topka2 {
+            display: flex;
+                background-color: SteelBlue;
+                height: 300px;
+                width: 75%;
+            
+            }
+            .topka3 {
+                display: flex;
+                justify-content: center;
+                    text-align: center;
+                    background-color: RoyalBlue;
+                    height: 300px;
+                    width: 75%;
+                
+                }
+
+                <?php
+                $conn = mysqli_connect('localhost', 'root', '', 'sklep');
+                $result = mysqli_query($conn, 'SELECT id, nazwa, opis, cena FROM podzespoly WHERE cena < 1000');
+            
+                while($row = mysqli_fetch_assoc($result)) {
+                    echo '<tr><td>'.$row['id'].'</td><td>'.$row['nazwa'].'</td><td>'.$row['opis'].'</td><td>'.$row['cena'].'</td></tr>';
+                }
+                mysqli_close($conn);
+                ?>
